@@ -1,0 +1,18 @@
+/* /public/css/tailwind.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* You can add additional custom styles here */
+  /* Custom CSS for positioning */
+  .dropdown-container {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    @apply absolute left-0 mt-2 p-2 bg-white rounded-lg shadow-lg z-10 hidden;
+  }
+
+  .dropdown-container:hover .dropdown-menu {
+    @apply block;
+  }

@@ -1,0 +1,126 @@
+<!-- views/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego Collection</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@1.13.0/dist/full.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 sticky">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="#" class="flex items-center">
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Lego Collection</span>
+          </a>
+
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="/views/home.html" class="block py-2 pl-3 pr-4 text-white bg-gray-100 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+              </li>
+              <button data-collapse-toggle="mobile-menu" type="button" class="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center" aria-controls="mobile-menu-2" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+                <!-- Button -->
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0 font-medium flex items-center justify-between w-full md:w-auto border-solid ">Themes <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                <!-- Dropdown menu -->
+                <li id="dropdownNavbar" class="hidden bg-white text-base z-10 list-none divide-y divide-gray-100 rounded shadow my-4 w-44">
+                    <ul class="py-1" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Theme 1</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Theme 2</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Theme 3</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="/views/about.html" class="block py-2 pl-3 pr-4 text-white bg-gray-100 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">About</a>
+                  </li>
+              </div>              
+        </div>
+      </nav>
+          
+
+    <!-- Hero Section -->
+    <section class="bg-white dark:bg-gray-900">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Welcome to our Lego Collection!</h1>
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Explore our amazing Lego sets below:</p>
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Explore Sets
+                    <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <a href="#" class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                    Explore Sets
+                </a> 
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img src="https://cdn.pixabay.com/photo/2017/03/20/02/51/snail-2158110_640.jpg" alt="mockup">
+            </div>                
+        </div>
+    </section>
+
+    <div class="grid gap-1">
+        <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
+            <h3 class="mb-6 text-3xl font-bold">Fearured Lego
+            </h3>
+            <p class="mb-6 pb-2 md:mb-12 md:pb-0">
+                Embark on a big adventure with gifts to thrill fantasy fans
+            </p>
+            <div class="grid  md:grid-cols-2 gap-4 p-5">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img src="https://cdn.rebrickable.com/media/thumbs/sets/21058-1/102707.jpg/1000x800p.jpg?1652191261.5330043" alt="LEGO Set Image" class="w-full h-auto max-w-full rounded-lg">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Great Pyramid of Giza (21058)</div>
+                        <p class="text-gray-700 text-base">Measuring over 13.5 in. (35cm) wide, this build-and-display model will 
+                            delight any lover of architecture, history and travel. </p>
+                    </div>
+                    <div class="px-6 py-4">
+                        <a href="/lego/sets/21058-1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full inline-block">View Set</a>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img src="https://cdn.rebrickable.com/media/thumbs/sets/41165-1/22639.jpg/1000x800p.jpg?1657985227.191336" alt="LEGO Set Image" class="w-full h-auto max-w-full rounded-lg">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Anna's Canoe Expedition</div>
+                        <p class="text-gray-700 text-base">Anna's Canoe Expedition" is a charming 
+                            LEGO set released in 2019, inspired by the beloved Disney movie "Frozen</p>
+                    </div>
+                    <div class="px-6 py-4">
+                        <a href="/lego/sets/21058-1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full inline-block">View Set</a>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img src="https://cdn.rebrickable.com/media/thumbs/sets/76417-1/125539.jpg/1000x800p.jpg?1689694101.7137222" alt="LEGO Set Image" class="w-full h-auto max-w-full rounded-lg">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Gringotts Wizarding Bank – Collectors' Edition</div>
+                        <p class="text-gray-700 text-base">From the opulent foyer and mezzanine floor with a safe in the wall where Hagrid’s secret 
+                            package is kept, to a spiraling vault cart track with a mechanism that stops the cart at each of 3 
+                            underground vaults, The Gringotts™ Wizarding Bank – Collectors’ Edition is indeed a treasure to behold.</p>
+                    </div>
+                    <div class="px-6 py-4">
+                        <a href="/lego/sets/21058-1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full inline-block">View Set</a>
+                    </div>
+                </div>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+                    <img src="https://cdn.rebrickable.com/media/thumbs/sets/75362-1/125575.jpg/1000x800p.jpg?1689772409.9805357" alt="LEGO Set Image" class="w-full h-auto max-w-full rounded-lg">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Ahsoka Tano's T-6 Jedi Shuttle</div>
+                        <p class="text-gray-700 text-base">This buildable playset features a detailed T-6 Jedi Shuttle and 4 LEGO® Star Wars™ minifigures to inspire kids’ imaginations. </p>
+                    </div>
+                    <div class="px-6 py-4">
+                        <a href="/lego/set1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full inline-block">View Set</a>
+                    </div>
+                </div>        
+    </div>
+</html>
