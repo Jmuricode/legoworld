@@ -1,3 +1,16 @@
+/********************************************************************************
+* WEB322 – Assignment 03
+*
+* I declare that this assignment is my own work in accordance with Seneca's
+* Academic Integrity Policy:
+*
+* https://www.senecacollege.ca/about/policies/academic-integrity-policy.html
+*
+* Name: ______________________ Student ID: ______________ Date: ______________
+*
+* Published URL: ___________________________________________________________
+*
+********************************************************************************/
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
